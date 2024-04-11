@@ -1,15 +1,13 @@
 .about-section{
-    background-color: #F9D0A3;
-    padding: 25px;
+    padding: 40px;
+    margin-bottom: 10px;
 }
 
-h2{
-    color: #DA001E;
+h1{
     text-align: center;
 }
 
 p{
     text-align: justify;
     text-indent: 30px;
-    color: #151217;
 }

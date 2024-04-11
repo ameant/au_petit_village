@@ -1,0 +1,15 @@
+.product-section{
+    padding: 25px 0;
+    text-align: center;
+}
+
+.description{
+    margin: 40px 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .description{     
+        text-indent: 12px;
+        text-align: justify;
+    }
+}

@@ -3,10 +3,21 @@
     une entreprise dédiée à la confection artisanale de figurines
     inspirées de la célèbre bande dessinée "Astérix et Obélix"
     </p>
+    <h1>Catalogue des figurines</h1>
+
+    <!-- Filtres -->
+    <section class="pipes">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Recherche par nom ...">
+        <button (click)="sortProducts('asc')">Tri par prix croissant</button>
+        <button (click)="sortProducts('desc')">Tri par prix décroissant</button>
+    </section>
+
+    <!-- Catalogue produits -->
     <ul class="products">
-        <li *ngFor="let figurine of products.figurines | sortByPrice">
-            <h3>{{ figurine.name }}</h3>
-            <p>Prix : {{ figurine.price }} €</p>
+        <li class="items" *ngFor="let product of products | filterByName:searchTerm | sortByPrice:sortOrder">
+            <h2>{{ product.name }}</h2>
+            <p>Prix : <strong>{{ product.price }} €</strong></p>
+            <button (click)="goToProduct(product.id)">En savoir plus</button>
         </li>
     </ul> 
 </div>

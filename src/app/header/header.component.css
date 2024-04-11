@@ -1,6 +1,6 @@
-.header{
+header{
     height: 120px;
-    border: 2px solid #F9D0A3;
+    background-color: #F9D0A3;
 }
 
 .navbar{
@@ -12,10 +12,10 @@
 
 .logo{
     padding-top: 10px;
-    width: 100px;
     height: 100px;
 }
 
+/* Liens du menu */
 .menu{
     display: flex;
     flex-direction: row;
@@ -29,5 +29,5 @@
 }
 
 .link:hover{
-    color: #FDD90B;
+    color: white;
 }
