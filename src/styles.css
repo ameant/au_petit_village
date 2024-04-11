@@ -1,11 +1,53 @@
-@font-face{
-    font-family: 'BubbleboddyNeue';
-    src: url('//src/assets/fonts/BubbleboddyNeue-Bold-Trial.woff');
-    src: url('//src/assets/fonts/BubbleboddyNeue-Bold\ Trial.ttf') format('truetype');
+/* Polices */
+@font-face {
+    font-family: "BubbleboddyNeue-Bold-Trial";
+    src: url(.//assets/fonts/BubbleboddyNeue-Bold-Trial.woff) format("woff");
+    src: url(.//assets/fonts/BubbleboddyNeue-Bold\ Trial.ttf) format("truetype");
 }
 
-@font-face{
-    font-family: 'Comfortaa';
-    src: url('//src/assets/fonts/Comfortaa-Regular.woff');
-    src: url('//src/assets/fonts/Comfortaa-Regular.ttf') format('truetype');
+@font-face {
+    font-family: "Comfortaa-Regular";
+    src: url(.//assets/fonts/Comfortaa-Regular.woff) format("woff");
+    src: url(.//assets/fonts/Comfortaa-Regular.ttf) format("truetype");
+}
+
+h1, h2{
+    font-family: "BubbleboddyNeue-Bold-Trial";
+}
+
+p, input, button, a, textarea{
+    font-family: "Comfortaa-Regular";
+}
+
+/* Couleurs et ajustements */
+h1{
+    color: #DA001E;
+    margin-bottom: 40px;
+}
+
+h2{
+    color: #FDD90B;
+    margin: 40px 0;
+}
+
+p{
+    color: #151217;
+}
+
+button{
+    border-radius: 5px;
+    background-color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    color: #DA001E;
+}
+
+/* Responsive Design mobiles */
+@media screen and (max-width: 767px) {
+    p{     
+        text-indent: 30px;
+        margin: 40px 0px;
+    }
 }

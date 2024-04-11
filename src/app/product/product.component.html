@@ -1,3 +1,7 @@
-<div>
-    <h2>Produit</h2>
-</div>
+<div class="product-section" *ngIf="product">
+    <h1>Fiche produit de la figurine</h1>
+    <h2>{{ product.name }}</h2>
+    <img class="img" [src]="imageUrl" alt="{{ product.name }}" />
+    <p class="description">{{product.description}}</p>
+    <p>Prix : <strong>{{ product.price }} €</strong></p>
+  </div>

@@ -1,10 +1,10 @@
 .contact-section{
-    background-color: #F9D0A3;
-    padding: 25px 0;
+    padding: 40px 0;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
-h2{
-    color: #DA001E;
+h1{
     text-align: center;
 }
 
@@ -12,5 +12,5 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
