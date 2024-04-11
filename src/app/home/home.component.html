@@ -1,0 +1,12 @@
+<div class="home-section">
+    <p class="presentation">Bienvenue chez "Au petit village",
+    une entreprise dédiée à la confection artisanale de figurines
+    inspirées de la célèbre bande dessinée "Astérix et Obélix"
+    </p>
+    <ul class="products">
+        <li *ngFor="let figurine of products.figurines | sortByPrice">
+            <h3>{{ figurine.name }}</h3>
+            <p>Prix : {{ figurine.price }} €</p>
+        </li>
+    </ul> 
+</div>

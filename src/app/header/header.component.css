@@ -1,0 +1,33 @@
+.header{
+    height: 120px;
+    border: 2px solid #F9D0A3;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 100px;
+}
+
+.link{
+    text-decoration: none;
+    color: #151217;
+}
+
+.link:hover{
+    color: #FDD90B;
+}

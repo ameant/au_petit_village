@@ -1,0 +1,15 @@
+.home-section{
+    padding: 25px 0;
+}
+
+.presentation{
+    text-align: center;
+    color: #DA001E ;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: 50%;
+}
